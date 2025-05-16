@@ -1,63 +1,53 @@
-# 🏃‍♂️ Edge GPS Tracker - Take Home Test
+# Location Tracker
 
-Welcome to the Edge take-home test! This challenge is designed to simulate a real-world feature we might build in the
-Edge app. It focuses on mobile location tracking and front-end feature implementation.
+A simple application for tracking and managing geographic locations.
 
----
+## Features
 
-## 📦 Overview
+- Add, edit, and delete locations
+- View locations on an interactive map
+- Search and filter locations
+- Export location data
 
-Your task is to build a **basic GPS activity tracker**. Users should
-be able to:
+## Getting Started
 
-1. Start a workout session that tracks their GPS location.
-2. View their route on a live map.
-3. Stop the session and move to the next screen.
-4. (Bonus) View metrics like time, distance.
+### Prerequisites
 
----
+- Node.js (v14+)
+- npm or yarn
+- [Expo Go](https://expo.dev/client) app (for previewing on your mobile device)
 
-## 🧠 What We're Looking For
-
-This test is not about pixel-perfect UI + design — we care about:
-
-- Code clarity and structure
-- Realistic handling of location tracking
-- Practical decision-making
-- Communication (via README/comments)
-
----
-
-## 🚀 Requirements
-
-### 📱 Frontend (React Native + TypeScript)
-
-- Request foreground location permissions from the user
-- Start and stop GPS location tracking
-- Display the route in real-time using a map
-
----
-
-## ✅ Bonus Ideas (Optional)
-
-- Track and display total distance using Haversine formula
-- Calculate and display average speed
-- Handle permission errors gracefully
-- Store a backup of location data locally in case of crash
-- Auto-pause tracking when the user is stationary / auto-resume when moving
-- Break down of split times (e.g., every km)
-- Any other features you think would be useful
-
----
-
-## 🧪 Project Setup
-
-### 1. Frontend
+### Installation
 
 ```bash
-cd location-tracker 
+git clone https://github.com/your-username/location-tracker.git
+cd location-tracker
 npm install
-cd ios && pod install && cd ..
-npm run start
-npm run ios
 ```
+
+### Running the App
+
+Start the development server with tunnel support (recommended for mobile preview):
+
+```bash
+npx expo start --tunnel
+```
+
+This will open the Expo developer tools in your browser. You can then:
+
+- Scan the QR code with the Expo Go app on your mobile device to preview the app instantly.
+- Or, use an emulator/simulator for testing.
+
+## Usage
+
+1. Launch the app using Expo Go or an emulator.
+2. Add new locations using the form.
+3. View and manage locations on the map.
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.

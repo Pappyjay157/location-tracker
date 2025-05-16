@@ -1,4 +1,21 @@
 {
-  "name": "LocationTracker",
-  "displayName": "LocationTracker"
+  "expo": {
+    "name": "LocationTracker",
+    "slug": "location-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to track movement and activity."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {},
+    "sdkVersion": "53.0.0"
+  }
 }
